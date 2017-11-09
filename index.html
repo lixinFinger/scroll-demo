@@ -32,7 +32,7 @@
         </div>
     </body>
     <script>
-        window.document.ontouchmove = function (e) {
+        document.getElementsByTagName("body")[0].ontouchmove = function (e) {
             e.preventDefault();
         };
         window.onload = function () {
