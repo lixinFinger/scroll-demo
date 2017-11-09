@@ -25,6 +25,9 @@
         <div id="div"></div>
     </body>
     <script>
+        window.document.ontouchmove = function (e) {
+            e.preventDefault();
+        };
         window.onload = function () {
             var div = document.getElementById("div")
             var str = ''
