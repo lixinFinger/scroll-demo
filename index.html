@@ -16,8 +16,10 @@
                 height: 100%;
                 width: 100%;
             }
-            body {
+            .scroll {
+                height: 100%;
                 overflow: auto;
+                width: 100%;
             }
             p {
                 color: #cecece;
@@ -25,7 +27,9 @@
         </style>
     </head>
     <body>
-        <div id="div"></div>
+        <div class="scroll">
+            <div id="div"></div>
+        </div>
     </body>
     <script>
         window.document.ontouchmove = function (e) {
