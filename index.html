@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <meta name="screen-orientation" content="portrait">
+        <meta name="x5-orientation" content="portrait">
+        <title>demo</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html, body {
+                background: #000000;
+                height: 100%;
+                width: 100%;
+            }
+            p {
+                color: #cecece;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div"></div>
+    </body>
+    <script>
+        window.onload = function () {
+            var div = document.getElementById("div")
+            var str = ''
+            for ( var i = 0; i < 100 ; i++ ) {
+                str += '<p>' + i + '</p>'
+            }
+            div.innerHTML = str
+        }
+    </script>
+</html>
